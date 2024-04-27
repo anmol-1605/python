@@ -1,0 +1,43 @@
+def performBubbleSort(nums):
+    n = len(nums)
+    # n = 6
+    # 5 4 3 2 1 
+    for fixThisIndex in range(n - 1, 0, -1):
+        # some logic
+        for index in range(fixThisIndex):
+            # 0 1 2 3 4 
+            if nums[index] > nums[index + 1]:
+                temp = nums[index]
+                nums[index] = nums[index + 1]
+                nums[index + 1] = temp
+        print(nums)
+ 
+nums = [12, 2, 34, 20, 56, 43, 45, 100, 89, 50]
+#nums = list(map(int, input().split()))
+print("Before sorting:")
+print(nums)
+ 
+# logic to perform sorting 
+ 
+performBubbleSort(nums)
+ 
+print("After sorting:")
+print(nums)
+
+      input 
+12, 2, 34, 20, 56, 43, 45, 100, 89, 50
+
+         output
+Before sorting:
+[12, 2, 34, 20, 56, 43, 45, 100, 89, 50]
+[2, 12, 20, 34, 43, 45, 56, 89, 50, 100]
+[2, 12, 20, 34, 43, 45, 56, 50, 89, 100]
+[2, 12, 20, 34, 43, 45, 50, 56, 89, 100]
+[2, 12, 20, 34, 43, 45, 50, 56, 89, 100]
+[2, 12, 20, 34, 43, 45, 50, 56, 89, 100]
+[2, 12, 20, 34, 43, 45, 50, 56, 89, 100]
+[2, 12, 20, 34, 43, 45, 50, 56, 89, 100]
+[2, 12, 20, 34, 43, 45, 50, 56, 89, 100]
+[2, 12, 20, 34, 43, 45, 50, 56, 89, 100]
+After sorting:
+[2, 12, 20, 34, 43, 45, 50, 56, 89, 100]
