@@ -1,0 +1,15 @@
+def findtotaloccurences(listofnumbers):
+    res=0
+    n=len(listofnumbers)
+    for index in range(n):
+        if listofnumbers[index]%2==0:
+            res=res+1
+    return res
+listofnumbers=[12,23,34,56,78,23,12,56]
+res=findtotaloccurences(listofnumbers)
+print("total number of even numbers are:",res)
+
+               Input
+        12,23,34,56,78,23,12,56
+            Output
+ total number of even numbers are: 6
