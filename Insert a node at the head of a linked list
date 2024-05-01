@@ -1,0 +1,22 @@
+def insertNodeAtHead(llist, data):
+   newNode = SinglyLinkedListNode(data)
+   if llist == None:
+       return newNode
+   newNode.next = llist
+   return newNode
+
+Input
+5
+383
+484
+392
+975
+321
+
+Output 
+
+321
+975
+392
+484
+383
