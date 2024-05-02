@@ -1,0 +1,10 @@
+n = int(input())
+if n < 18:
+   print("Ineligible")
+else:
+   print("Eligible")
+
+Input
+15
+Output
+Ineligible
